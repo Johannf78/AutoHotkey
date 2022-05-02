@@ -1,9 +1,13 @@
-﻿#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-/*
 
+/*
+Usage Instructions
+https://youtu.be/wOq1ay2hcEY
+
+Symbols for keyboard shortcuts.
 #	Win (Windows logo key).[v1.0.48.01+]: For Windows Vista and later, hotkeys that include Win (e.g. #a) will wait for Win to be released before sending any text containing an L keystroke. This prevents usages of Send within such a hotkey from locking the PC. This behavior applies to all sending modes except SendPlay (which doesn't need it) and blind mode. [v1.1.29+]: Text mode is also excluded.
 	Note: Pressing a hotkey which includes Win may result in extra simulated keystrokes (Ctrl by default). See #MenuMaskKey.
 
@@ -55,6 +59,9 @@ SendInput, %xx%
 return
 
 #+s::Run C:\Windows\system32\SnippingTool.exe
+
+::mfg::Mit freundlichen Grüßen,{Enter}Johann
+
 
 ::str1::Dear ,{Enter}{Enter}Thank you for your enquiry on our website.{Enter}I have forwarded you your enquiry to a few of our approved partners in your area.{Enter}Please expect to be contacted by them soon.{Enter}{Enter}Kind regards
 return
